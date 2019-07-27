@@ -40,7 +40,7 @@ module.exports = merge(baseConfig, {
                     progressive: true
                 }),
                 imageminPngquant({
-                    quality: 95
+                    quality: [0.9, 0.95]
                 })
             ]
         })

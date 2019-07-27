@@ -5,9 +5,7 @@ module.exports = (ctx) => ({
     map: !isProduction ? ctx.map : false,
     plugins: {
         'autoprefixer': {
-            browsers: 'last 2 versions, not IE <= 11'
         },
-        'css-mqpacker': {},
         'postcss-pxtorem': isProduction ? {
             rootValue: 16,
             propList: ['*']
